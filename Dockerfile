@@ -13,4 +13,4 @@ COPY ./resources/rsyslog.conf /etc/rsyslog.conf
 COPY ./resources/listen.conf /etc/rsyslog.d/listen.conf
 
 
-CMD /usr/bin/echo myhostname=$myhostname >> /etc/postfix/main.cf; /usr/bin/supervisord -c /etc/supervisor/supervisord.conf
+CMD /usr/bin/supervisord -c /etc/supervisor/supervisord.conf
