@@ -1,6 +1,6 @@
 FROM centos
 
-RUN dnf -y install -y https://download.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
+RUN yum install -y https://mirrors.fedoraproject.org/metalink?repo=fedora-34&arch=x86_64/pub/epel/epel-release-latest-7.noarch.rpm
 
 RUN yum install -y postfix supervisor rsyslog
 
